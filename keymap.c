@@ -102,6 +102,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 case KC_U:
                     INTERNAL_SEND_COMBO("u");
                     return false;
+                default:
+                    break;
             }
         } else if (mod_state & MOD_BIT_LSHIFT) {
             switch (keycode) {
@@ -120,6 +122,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                     tap_code(KC_PAUSE);
                     register_code(KC_LEFT_SHIFT);
                     return false;
+                default:
+                    break;
             }
         }
     }
