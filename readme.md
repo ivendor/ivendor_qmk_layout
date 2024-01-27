@@ -1,0 +1,1 @@
+# Customizations for kinesis keyboard
